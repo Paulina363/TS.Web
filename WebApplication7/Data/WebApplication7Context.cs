@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using WebApplication7.Models;
 
 namespace WebApplication7.Models
 {
@@ -14,5 +15,7 @@ namespace WebApplication7.Models
         }
 
         public DbSet<WebApplication7.Models.Song> Song { get; set; }
+
+        public DbSet<WebApplication7.Models.Calendar> Calendar { get; set; }
     }
 }
